@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02071E901AA47E7500977F37 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02071E8F1AA47E7500977F37 /* NotificationCenter.framework */; };
+		02071E961AA47E7500977F37 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02071E951AA47E7500977F37 /* TodayViewController.m */; };
+		02071E981AA47E7500977F37 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02071E971AA47E7500977F37 /* MainInterface.storyboard */; };
+		02071E9B1AA47E7500977F37 /* TopTal Top 3.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 02071E8D1AA47E7400977F37 /* TopTal Top 3.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		02D028831AA274A600E31F04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D028821AA274A600E31F04 /* main.m */; };
 		02D028861AA274A600E31F04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D028851AA274A600E31F04 /* AppDelegate.m */; };
 		02D028891AA274A600E31F04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D028881AA274A600E31F04 /* ViewController.m */; };
@@ -17,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		02071E991AA47E7500977F37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D028751AA274A500E31F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02071E8C1AA47E7400977F37;
+			remoteInfo = "TopTal top 10";
+		};
 		02D028971AA274A600E31F04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 02D028751AA274A500E31F04 /* Project object */;
@@ -26,7 +37,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02071E9F1AA47E7500977F37 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02071E9B1AA47E7500977F37 /* TopTal Top 3.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		02071E881AA47C8700977F37 /* BlogExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BlogExample.entitlements; sourceTree = "<group>"; };
+		02071E8D1AA47E7400977F37 /* TopTal Top 3.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TopTal Top 3.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02071E8F1AA47E7500977F37 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		02071E931AA47E7500977F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02071E941AA47E7500977F37 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		02071E951AA47E7500977F37 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		02071E971AA47E7500977F37 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		02071EA01AA4843500977F37 /* TopTal Top 3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TopTal Top 3.entitlements"; sourceTree = "<group>"; };
 		02D0287D1AA274A500E31F04 /* BlogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D028811AA274A600E31F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D028821AA274A600E31F04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +76,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02071E8A1AA47E7400977F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02071E901AA47E7500977F37 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02D0287A1AA274A500E31F04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +101,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02071E8E1AA47E7500977F37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02071E8F1AA47E7500977F37 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02071E911AA47E7500977F37 /* TopTal top 10 */ = {
+			isa = PBXGroup;
+			children = (
+				02071E941AA47E7500977F37 /* TodayViewController.h */,
+				02071E951AA47E7500977F37 /* TodayViewController.m */,
+				02071E971AA47E7500977F37 /* MainInterface.storyboard */,
+				02071E921AA47E7500977F37 /* Supporting Files */,
+			);
+			path = "TopTal top 10";
+			sourceTree = "<group>";
+		};
+		02071E921AA47E7500977F37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02071E931AA47E7500977F37 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		02D028741AA274A500E31F04 = {
 			isa = PBXGroup;
 			children = (
+				02071EA01AA4843500977F37 /* TopTal Top 3.entitlements */,
 				02D0287F1AA274A500E31F04 /* BlogExample */,
 				02D028991AA274A600E31F04 /* BlogExampleTests */,
+				02071E911AA47E7500977F37 /* TopTal top 10 */,
+				02071E8E1AA47E7500977F37 /* Frameworks */,
 				02D0287E1AA274A500E31F04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +145,7 @@
 			children = (
 				02D0287D1AA274A500E31F04 /* BlogExample.app */,
 				02D028961AA274A600E31F04 /* BlogExampleTests.xctest */,
+				02071E8D1AA47E7400977F37 /* TopTal Top 3.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +153,7 @@
 		02D0287F1AA274A500E31F04 /* BlogExample */ = {
 			isa = PBXGroup;
 			children = (
+				02071E881AA47C8700977F37 /* BlogExample.entitlements */,
 				02D028841AA274A600E31F04 /* AppDelegate.h */,
 				02D028851AA274A600E31F04 /* AppDelegate.m */,
 				02D028871AA274A600E31F04 /* ViewController.h */,
@@ -122,6 +195,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		02071E8C1AA47E7400977F37 /* TopTal Top 3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02071E9E1AA47E7500977F37 /* Build configuration list for PBXNativeTarget "TopTal Top 3" */;
+			buildPhases = (
+				02071E891AA47E7400977F37 /* Sources */,
+				02071E8A1AA47E7400977F37 /* Frameworks */,
+				02071E8B1AA47E7400977F37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TopTal Top 3";
+			productName = "TopTal top 10";
+			productReference = 02071E8D1AA47E7400977F37 /* TopTal Top 3.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		02D0287C1AA274A500E31F04 /* BlogExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02D028A01AA274A600E31F04 /* Build configuration list for PBXNativeTarget "BlogExample" */;
@@ -129,10 +219,12 @@
 				02D028791AA274A500E31F04 /* Sources */,
 				02D0287A1AA274A500E31F04 /* Frameworks */,
 				02D0287B1AA274A500E31F04 /* Resources */,
+				02071E9F1AA47E7500977F37 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				02071E9A1AA47E7500977F37 /* PBXTargetDependency */,
 			);
 			name = BlogExample;
 			productName = BlogExample;
@@ -166,8 +258,23 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Marija Efremova";
 				TargetAttributes = {
+					02071E8C1AA47E7400977F37 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NY2LL84TZZ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					02D0287C1AA274A500E31F04 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NY2LL84TZZ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					02D028951AA274A600E31F04 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -190,11 +297,20 @@
 			targets = (
 				02D0287C1AA274A500E31F04 /* BlogExample */,
 				02D028951AA274A600E31F04 /* BlogExampleTests */,
+				02071E8C1AA47E7400977F37 /* TopTal Top 3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02071E8B1AA47E7400977F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02071E981AA47E7500977F37 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02D0287B1AA274A500E31F04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +331,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02071E891AA47E7400977F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02071E961AA47E7500977F37 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02D028791AA274A500E31F04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +360,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		02071E9A1AA47E7500977F37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02071E8C1AA47E7400977F37 /* TopTal Top 3 */;
+			targetProxy = 02071E991AA47E7500977F37 /* PBXContainerItemProxy */;
+		};
 		02D028981AA274A600E31F04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 02D0287C1AA274A500E31F04 /* BlogExample */;
@@ -263,6 +392,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		02071E9C1AA47E7500977F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TopTal Top 3.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TopTal top 10/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02071E9D1AA47E7500977F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TopTal Top 3.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "TopTal top 10/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		02D0289E1AA274A600E31F04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,9 +506,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogExample/BlogExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BlogExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -353,9 +520,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogExample/BlogExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BlogExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -396,6 +567,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02071E9E1AA47E7500977F37 /* Build configuration list for PBXNativeTarget "TopTal Top 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02071E9C1AA47E7500977F37 /* Debug */,
+				02071E9D1AA47E7500977F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		02D028781AA274A500E31F04 /* Build configuration list for PBXProject "BlogExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -412,6 +592,7 @@
 				02D028A21AA274A600E31F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02D028A31AA274A600E31F04 /* Build configuration list for PBXNativeTarget "BlogExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +601,7 @@
 				02D028A51AA274A600E31F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
