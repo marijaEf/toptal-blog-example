@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -49,7 +51,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-9e-aGP">
                                 <rect key="frame" x="244" y="132" width="60" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="uu4-7y-hrK"/>
+                                    <constraint firstAttribute="width" constant="60" id="AHK-eb-m5Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="See all...">
@@ -68,16 +70,21 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="HUh-h5-D5X" secondAttribute="bottom" constant="15" id="9vc-vr-T4T"/>
                             <constraint firstItem="FjC-Ma-iYM" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="AyJ-sC-vG2"/>
-                            <constraint firstItem="HUh-h5-D5X" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="BkE-5I-BkW"/>
+                            <constraint firstItem="WH1-9e-aGP" firstAttribute="top" secondItem="FjC-Ma-iYM" secondAttribute="bottom" id="Brp-Ir-2Xe"/>
+                            <constraint firstItem="WH1-9e-aGP" firstAttribute="leading" secondItem="HUh-h5-D5X" secondAttribute="trailing" constant="2" id="Bz2-G9-YLe"/>
                             <constraint firstItem="FjC-Ma-iYM" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="FUH-46-f1x"/>
-                            <constraint firstItem="WH1-9e-aGP" firstAttribute="bottom" secondItem="FKl-LY-JtV" secondAttribute="top" id="FY1-uD-Xfb"/>
+                            <constraint firstItem="HUh-h5-D5X" firstAttribute="leading" secondItem="FjC-Ma-iYM" secondAttribute="leading" id="Mrl-yU-kb0"/>
+                            <constraint firstItem="HUh-h5-D5X" firstAttribute="top" secondItem="FjC-Ma-iYM" secondAttribute="bottom" constant="14" id="NzN-jd-79n"/>
+                            <constraint firstAttribute="bottom" secondItem="HUh-h5-D5X" secondAttribute="bottom" constant="15" id="VYI-Pf-w1L"/>
+                            <constraint firstItem="WH1-9e-aGP" firstAttribute="bottom" secondItem="FKl-LY-JtV" secondAttribute="top" id="bJN-pk-fc5"/>
+                            <constraint firstItem="HUh-h5-D5X" firstAttribute="firstBaseline" secondItem="WH1-9e-aGP" secondAttribute="baseline" id="cOM-5n-9jh"/>
                             <constraint firstAttribute="trailing" secondItem="FjC-Ma-iYM" secondAttribute="trailing" id="dgB-uF-THn"/>
-                            <constraint firstItem="WH1-9e-aGP" firstAttribute="top" secondItem="FjC-Ma-iYM" secondAttribute="bottom" id="elS-mJ-zYj"/>
+                            <constraint firstItem="WH1-9e-aGP" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="fVb-H6-u0b"/>
                             <constraint firstItem="FjC-Ma-iYM" firstAttribute="bottom" secondItem="FKl-LY-JtV" secondAttribute="top" constant="-44" id="fta-TH-liw"/>
-                            <constraint firstItem="WH1-9e-aGP" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="rx5-Uc-wCe"/>
-                            <constraint firstItem="WH1-9e-aGP" firstAttribute="leading" secondItem="HUh-h5-D5X" secondAttribute="trailing" constant="2" id="yXT-D6-6u1"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="HUh-h5-D5X" secondAttribute="bottom" constant="15" id="p0Z-bn-s6T"/>
+                            <constraint firstItem="HUh-h5-D5X" firstAttribute="firstBaseline" secondItem="WH1-9e-aGP" secondAttribute="firstBaseline" id="ped-bn-eNv"/>
+                            <constraint firstAttribute="bottom" secondItem="WH1-9e-aGP" secondAttribute="bottom" id="ymx-Gk-OgD"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
