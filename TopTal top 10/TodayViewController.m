@@ -5,6 +5,10 @@
 //  Created by Marija Efremova on 3/2/15.
 //  Copyright (c) 2015 Marija Efremova. All rights reserved.
 //
+////////
+// This sample is published as part of the blog article at www.toptal.com/blog
+// Visit www.toptal.com/blog and subscribe to our newsletter to read great posts
+////////
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
@@ -30,18 +34,6 @@
     return self;
 }
 
-//- (void)awakeFromNib {
-//    [super awakeFromNib];
-//    [self setPreferredContentSize:CGSizeMake(self.view.bounds.size.width, 176)];
-//}
-
-//- (void)updatePreferredContentSize
-//{
-//    self.preferredContentSize = CGSizeMake(self.view.frame.size.width, [self.topThreeTableView numberOfRowsInSection:0]*self.topThreeTableView.rowHeight);
-//    
-//    //[self.topThreeTableView numberOfRowsInSection:0]*self.topThreeTableView.rowHeight
-//}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -55,23 +47,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-//-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
-//{
-//    NSLog(@"extension viewWillTransitionToSize");
-//    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context){
-//        //        self.topThreeTableView.frame = CGRectMake(0, 0, size.width, size.height);
-//        [self updatePreferredContentSize];
-//        
-//    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context)
-//     {
-//         
-//     }];
-//    
-//    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-//}
-
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
-    NSLog(@"extension widgetPerformUpdateWithCompletionHandler");
     // Perform any setup necessary in order to update the view.
     
     // If an error is encountered, use NCUpdateResultFailed
@@ -84,12 +60,13 @@
 }
 
 - (IBAction)showAllTapped:(id)sender {
+//    open the containing app
     [self.extensionContext openURL:[NSURL URLWithString:@"topTenTechnologies://home"] completionHandler:nil];
 }
 
 - (void) setupDataSource
 {
-    NSLog(@"extension setupDataSource");
+//    get the shared data from NSUserDefaults
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.TopTalBlogExample"];
     
     if ([sharedDefaults objectForKey:@"dataArray"]) {
@@ -99,11 +76,9 @@
     [self.latestUpdateLbl setText:[self lastUpdateLabelText]];
     
     [self.topThreeTableView reloadData];
-//    [self updatePreferredContentSize];
 }
 
 - (void)userDefaultsDidChange:(NSNotification *)notification {
-    //    [self.topThreeTableView reloadData];
     [self setupDataSource];
 }
 
@@ -117,16 +92,12 @@
     NSDate *date = [defaults objectForKey:@"lastUpdateDate"];
     
     NSString *formattedDateString = [dateFormatter stringFromDate:date];
-    NSLog(@"formattedDateString: %@", formattedDateString);
-    
     return [NSString stringWithFormat:@"Latest update: %@", formattedDateString];
 }
 
 #pragma mark - Table view data source and delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    // The number of time zones in the section is the count of the array associated with the section in the sections array.
     return 3;
 }
 
@@ -136,20 +107,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell
-    //    if (indexPath.row == 3) {
-    //        cell.textLabel.text = [self lastUpdateLabelText];
-    //    }
-    //    else
-    //        cell.textLabel.text = self.tableViewDataArray[indexPath.row];
-    
-    cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.text = self.tableViewDataArray[indexPath.row];
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
 }
 
 @end
