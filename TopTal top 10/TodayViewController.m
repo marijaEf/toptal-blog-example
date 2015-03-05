@@ -37,9 +37,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    [self setupDataSource];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +51,7 @@
     // If there's no update required, use NCUpdateResultNoData
     // If there's an update, use NCUpdateResultNewData
     
-    [self setupDataSource];
+    [self updateTableView];
     
     completionHandler(NCUpdateResultNewData);
 }
@@ -64,7 +61,7 @@
     [self.extensionContext openURL:[NSURL URLWithString:@"topTenTechnologies://home"] completionHandler:nil];
 }
 
-- (void) setupDataSource
+- (void) updateTableView
 {
 //    get the shared data from NSUserDefaults
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.TopTalBlogExample"];
@@ -79,7 +76,7 @@
 }
 
 - (void)userDefaultsDidChange:(NSNotification *)notification {
-    [self setupDataSource];
+    [self updateTableView];
 }
 
 - (NSString *) lastUpdateLabelText {
