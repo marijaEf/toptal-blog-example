@@ -17,7 +17,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *topThreeTableView;
 @property (strong, nonatomic) IBOutlet UILabel *latestUpdateLbl;
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
-@property (nonatomic) CGSize preferredContentSize;
 - (IBAction)showAllTapped:(id)sender;
 
 @end
@@ -64,7 +63,7 @@
 - (void) updateTableView
 {
 //    get the shared data from NSUserDefaults
-    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.TopTalBlogExample"];
+    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.BlogExample"];
     
     if ([sharedDefaults objectForKey:@"dataArray"]) {
         self.tableViewDataArray = [[sharedDefaults objectForKey:@"dataArray"] mutableCopy];
@@ -80,7 +79,7 @@
 }
 
 - (NSString *) lastUpdateLabelText {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.TopTalBlogExample"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.BlogExample"];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];

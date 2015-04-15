@@ -31,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.TopTalBlogExample"];
+    self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.BlogExample"];
     
     self.topThreeBeforeEdit = [[NSMutableArray alloc] initWithCapacity:3];
     self.topThreeAfterEdit = [[NSMutableArray alloc] initWithCapacity:3];
@@ -46,6 +46,7 @@
 
 - (void) setupDataSource
 {
+    NSLog(@"setupDataSource");
     if ([self.sharedDefaults objectForKey:@"dataArray"]) {
         self.tableViewDataArray = [[self.sharedDefaults objectForKey:@"dataArray"] mutableCopy];
     }

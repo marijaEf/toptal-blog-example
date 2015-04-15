@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CB4CC905-6078-4027-B6B0-9936B128998B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>BlogExample</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A8A0F8BCBE32208BB84B5A0BCB55E3B1442F466F</key>
-		<string>https://github.com/marijaEf/BlogExample.git</string>
+		<string>https://github.com/marijaEf/TopTal-blog-example.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BlogExample.xcodeproj</string>
+	<string>BlogExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A8A0F8BCBE32208BB84B5A0BCB55E3B1442F466F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/marijaEf/BlogExample.git</string>
+	<string>https://github.com/marijaEf/TopTal-blog-example.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
