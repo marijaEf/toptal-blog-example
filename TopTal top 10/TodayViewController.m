@@ -13,6 +13,9 @@
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
 
+#define appGroupSuiteName   @"group.BlogExample"
+#warning "Please make sure to update this value upon (re)enabling App Group."
+
 @interface TodayViewController () <NCWidgetProviding>
 @property (strong, nonatomic) IBOutlet UITableView *topThreeTableView;
 @property (strong, nonatomic) IBOutlet UILabel *latestUpdateLbl;
@@ -63,7 +66,7 @@
 - (void) updateTableView
 {
 //    get the shared data from NSUserDefaults
-    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.BlogExample"];
+    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:appGroupSuiteName];
     
     if ([sharedDefaults objectForKey:@"dataArray"]) {
         self.tableViewDataArray = [[sharedDefaults objectForKey:@"dataArray"] mutableCopy];
@@ -79,7 +82,7 @@
 }
 
 - (NSString *) lastUpdateLabelText {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.BlogExample"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:appGroupSuiteName];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];

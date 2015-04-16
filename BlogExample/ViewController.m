@@ -12,6 +12,9 @@
 
 #import "ViewController.h"
 
+#define appGroupSuiteName   @"group.BlogExample"
+#warning "Please make sure to update this value upon (re)enabling App Group."
+
 @interface ViewController ()
 
 @property (nonatomic, strong) NSMutableArray *tableViewDataArray;
@@ -31,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.BlogExample"];
+    self.sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:appGroupSuiteName];
     
     self.topThreeBeforeEdit = [[NSMutableArray alloc] initWithCapacity:3];
     self.topThreeAfterEdit = [[NSMutableArray alloc] initWithCapacity:3];
